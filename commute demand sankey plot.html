@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="136ea5b2d9824e1780ac630bd035f30e" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_136ea5b2d9824e1780ac630bd035f30e = echarts.init(
+            document.getElementById('136ea5b2d9824e1780ac630bd035f30e'), 'white', {renderer: 'canvas'});
+        var option_136ea5b2d9824e1780ac630bd035f30e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "sankey",
+            "data": [
+                {
+                    "name": "pre_COVID:unemployed"
+                },
+                {
+                    "name": "pre_COVID:work-at-home"
+                },
+                {
+                    "name": "pre_COVID:commute"
+                },
+                {
+                    "name": "Lockdown:unemployed"
+                },
+                {
+                    "name": "Lockdown:work-at-home"
+                },
+                {
+                    "name": "Lockdown:commute"
+                },
+                {
+                    "name": "Current:unemployed"
+                },
+                {
+                    "name": "Current:work-at-home"
+                },
+                {
+                    "name": "Current:commute"
+                }
+            ],
+            "links": [
+                {
+                    "source": "pre_COVID:commute",
+                    "target": "Lockdown:commute",
+                    "value": 655
+                },
+                {
+                    "source": "pre_COVID:commute",
+                    "target": "Lockdown:unemployed",
+                    "value": 155
+                },
+                {
+                    "source": "pre_COVID:commute",
+                    "target": "Lockdown:work-at-home",
+                    "value": 1119
+                },
+                {
+                    "source": "pre_COVID:unemployed",
+                    "target": "Lockdown:commute",
+                    "value": 41
+                },
+                {
+                    "source": "pre_COVID:unemployed",
+                    "target": "Lockdown:unemployed",
+                    "value": 571
+                },
+                {
+                    "source": "pre_COVID:unemployed",
+                    "target": "Lockdown:work-at-home",
+                    "value": 43
+                },
+                {
+                    "source": "pre_COVID:work-at-home",
+                    "target": "Lockdown:commute",
+                    "value": 10
+                },
+                {
+                    "source": "pre_COVID:work-at-home",
+                    "target": "Lockdown:unemployed",
+                    "value": 19
+                },
+                {
+                    "source": "pre_COVID:work-at-home",
+                    "target": "Lockdown:work-at-home",
+                    "value": 121
+                },
+                {
+                    "source": "Lockdown:commute",
+                    "target": "Current:commute",
+                    "value": 600
+                },
+                {
+                    "source": "Lockdown:commute",
+                    "target": "Current:unemployed",
+                    "value": 58
+                },
+                {
+                    "source": "Lockdown:commute",
+                    "target": "Current:work-at-home",
+                    "value": 48
+                },
+                {
+                    "source": "Lockdown:unemployed",
+                    "target": "Current:commute",
+                    "value": 129
+                },
+                {
+                    "source": "Lockdown:unemployed",
+                    "target": "Current:unemployed",
+                    "value": 586
+                },
+                {
+                    "source": "Lockdown:unemployed",
+                    "target": "Current:work-at-home",
+                    "value": 30
+                },
+                {
+                    "source": "Lockdown:work-at-home",
+                    "target": "Current:commute",
+                    "value": 834
+                },
+                {
+                    "source": "Lockdown:work-at-home",
+                    "target": "Current:unemployed",
+                    "value": 72
+                },
+                {
+                    "source": "Lockdown:work-at-home",
+                    "target": "Current:work-at-home",
+                    "value": 377
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
+            "nodeWidth": 20,
+            "nodeGap": 30,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.3,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "source"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "commute demand",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_136ea5b2d9824e1780ac630bd035f30e.setOption(option_136ea5b2d9824e1780ac630bd035f30e);
+    </script>
+</body>
+</html>
